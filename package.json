@@ -1,0 +1,19 @@
+{
+  "name": "reactjs-api-test",
+  "version": "1.0.0",
+  "description": "Build a simple search web app using React and ES6.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heldrida/reactjs-api-test.git"
+  },
+  "author": "Helder O.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heldrida/reactjs-api-test/issues"
+  },
+  "homepage": "https://github.com/heldrida/reactjs-api-test#readme"
+}
