@@ -1,11 +1,12 @@
 import React from 'react';
 
 const VideoList = (props) => {
-	const videoItems = props.videos.map((video, k) => {
+	const videos = [1, 2, 3];
+	const videoItems = videos.map((video, k) => {
 		return	<li key={ k } className="list-group-item">
 				<div className="video-list media">
 					<div className="media-left">
-						<img className="media-object" src={ '//loremflickr.com/500/500' } />
+						<img className="media-object" src={ '//loremflickr.com/500/500?' + k } />
 					</div>
 				</div>
 				<div className="media-body">
