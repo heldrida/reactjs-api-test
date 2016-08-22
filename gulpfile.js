@@ -54,4 +54,6 @@ gulp.task('watch', function () {
 	gulp.watch('./src/index.html', ['html']);
 });
 
+gulp.task('dev', ['default']);
+
 gulp.task('default', ['webpack:server', 'watch']);

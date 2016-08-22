@@ -29,6 +29,16 @@
 	npm run build
 	```
 
+	### Development
+
+	```
+	gulp dev
+	```	
+
+	### Build architecture
+	
+	Find the source code under the `src` directory for javascript and `sass` for the stylesheets. Before modifying ensure that the development watcher is running by running the development watch command (see development notes). The `dist` directory holds the files ready for distribution.
+
 	## Built With
 
 	* ReactJS
