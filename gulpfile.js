@@ -1,18 +1,10 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
 	plumber = require('gulp-plumber'),
 	webpack = require("webpack"),
 	webpackDevServer = require("webpack-dev-server"),
 	webpackConfig = require("./webpack.config.js"),
 	gutil = require('gulp-util');
 
-
-gulp.task('sass', function () {
-    return gulp.src('./src/sass/app.scss')
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(gulp.dest('./build/css'));
-});
 
 gulp.task('html', function () {
     return gulp.src('app/index.html')
@@ -47,7 +39,7 @@ gulp.task("webpack:server", function(callback) {
 
 });
 
-gulp.task("build", ['html', 'sass'], function () {
+gulp.task("build", ['html'], function () {
     // run webpack
     webpack(webpackConfig, function (err, stats) {
         if(err) throw new gutil.PluginError("webpack", err);
@@ -58,7 +50,6 @@ gulp.task("build", ['html', 'sass'], function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch('./src/sass/**/*.scss', ['sass']);
 	gulp.watch('./app/index.html', ['html']);
 });
 
