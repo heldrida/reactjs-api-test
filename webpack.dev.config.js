@@ -9,13 +9,8 @@ module.exports = {
 		'./src/js/index.js'
 	],
 	output: {
-		path: __dirname + '/build',
+		path: __dirname + '/static',
 		filename: "index_bundle.js"
-	},
-	output: {
-		path: path.join(__dirname, 'build'),
-		filename: 'bundle-[hash].js',
-		publicPath: '/build'
 	},
 	module: {
 		loaders: [
