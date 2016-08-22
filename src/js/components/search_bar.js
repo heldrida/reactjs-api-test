@@ -7,6 +7,7 @@ class SearchBar extends Component {
 
 	constructor(props) {
 		super(props);
+		// todo: probably a default term is not required, have a message instead maybe
 		this.state = {
 			term: 'skateboarding'
 		}
@@ -16,9 +17,16 @@ class SearchBar extends Component {
 		this.props.searchVideos(this.state.term);
 	}
 
+	onInputChange(term) {
+		this.setState({ term });
+		this.props.searchVideos(this.state.term);
+	}
+
 	render() {
 
 		console.log(this.props.videos);
+
+		// todo: debounce the callback (split the state and call for the action)
 
 		return (
 			<div className="search-bar">
@@ -28,11 +36,6 @@ class SearchBar extends Component {
 			</div>
 		);
 
-	}
-
-	onInputChange(term) {
-		this.setState({ term });
-		this.props.searchVideos(this.state.term);
 	}
 
 };
