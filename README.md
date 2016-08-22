@@ -15,7 +15,7 @@
 
 	### Prerequisities
 
-	Before you start, generate API key from Google youtube and copy the api_keys.example.js as api_keys.js and place your generated key there!
+	Before you start, generate API key from Google youtube and copy the api_keys.example.js as api_keys.js and place your generated key there ( use the following link for more info: https://developers.google.com/youtube/registering_an_application * this is the valid url at the time this document was written, search otherwise )
 
 	```
 	NodeJS + NPM
