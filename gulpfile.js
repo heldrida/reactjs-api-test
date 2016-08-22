@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('html', function () {
-    return gulp.src('app/index.html')
+    return gulp.src('src/index.html')
 				.pipe(gulp.dest('build'));
 });
 
@@ -50,7 +50,7 @@ gulp.task("build", ['html'], function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch('./app/index.html', ['html']);
+	gulp.watch('./src/index.html', ['html']);
 });
 
 gulp.task('default', ['webpack:server', 'watch']);
