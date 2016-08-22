@@ -26,7 +26,5 @@ Temporary Items
 .apdisk
 
 node_modules
-ftp-diff-deployer-memory-file.json
-build
 config.json
 config.js
