@@ -2,7 +2,7 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	webpack = require("webpack"),
 	webpackDevServer = require("webpack-dev-server"),
-	webpackConfig = require("./webpack.config.js"),
+	webpackConfig = require("./webpack.dev.config.js"),
 	gutil = require('gulp-util');
 
 
