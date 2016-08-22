@@ -15,6 +15,8 @@
 
 	### Prerequisities
 
+	Before you start, generate API key from Google youtube and copy the api_keys.example.js as api_keys.js and place your generated key there!
+
 	```
 	NodeJS + NPM
 	```
@@ -30,6 +32,7 @@
 	```
 
 	### Development
+
 
 	```
 	gulp dev

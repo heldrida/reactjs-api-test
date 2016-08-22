@@ -1,3 +1,5 @@
+import apiKeys from '../api_keys';
+
 export const SEARCH_VIDEOS = 'SEARCH_VIDEOS';
 
 export function searchVideos(term) {
