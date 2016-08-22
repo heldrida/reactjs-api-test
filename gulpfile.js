@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 
 gulp.task('html', function () {
     return gulp.src('src/index.html')
-				.pipe(gulp.dest('build'));
+				.pipe(gulp.dest('dist'));
 });
 
 gulp.task("webpack:server", function(callback) {
@@ -24,7 +24,7 @@ gulp.task("webpack:server", function(callback) {
 		//noInfo: true,
 		//watch: true,
 		historyApiFallback: true,
-		contentBase: './build',
+		contentBase: './dist',
 		hot: true,
 		progress: true,
 		open: true,
