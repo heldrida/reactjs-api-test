@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-
-require('../sass/app.scss');
+import routes from './routes';
+import App from './containers/app';
 
 ReactDOM.render(
-	<div>Hello world!</div>,
+	<App />,
     document.getElementById('app')
 );
