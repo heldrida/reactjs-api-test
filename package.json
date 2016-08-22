@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/heldrida/reactjs-api-test/issues"
   },
-  "homepage": "https://github.com/heldrida/reactjs-api-test#readme"
+  "homepage": "https://github.com/heldrida/reactjs-api-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  }
 }
