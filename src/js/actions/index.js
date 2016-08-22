@@ -1,14 +1,19 @@
 import apiKeys from '../api_keys';
+import YTSearch from 'youtube-api-search';
+
+const API_KEY = apiKeys.youtube_api;
 
 export const SEARCH_VIDEOS = 'SEARCH_VIDEOS';
 
 export function searchVideos(term) {
 
-	// Fake the http get request
 	let promise = new Promise(function (resolve, reject) {
-		setTimeout(function () {
-			resolve(['VIDEO1', 'VIDEO2', 'VIDEO3']);
-		}, 1200);
+		
+		// todo: handle exceptions
+		YTSearch({ key: API_KEY, term: term }, (videos) => {
+			resolve(videos);
+		});
+
 	});
 
 	return {

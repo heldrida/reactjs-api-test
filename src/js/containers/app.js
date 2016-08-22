@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import VideoList from '../components/video_list';
 
 class App extends Component {
 	render() {
 		return (
 			<div className="app">
-				<h1>Hello app!</h1>
+				<VideoList videos={ [1, 2, 3] } />
 			</div>
 		);
 	}
