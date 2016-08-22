@@ -1,5 +1,4 @@
-	
-	React Programming Challenge
+	# React Programming Challenge
 
 	Build a simple search web app using React and ES6. 
 
@@ -8,3 +7,32 @@
 	Feel free to use a public API of your choice. Some public APIs can be found here: https://github.com/toddmotto/public-apis
 
 	The app should utilise at least two features introduced to JavaScript in ES6.
+
+	## Getting Started
+
+	These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+	Clone the repository to your local environment, install any dependencies and install the packages. Run the development command to start a local server, run the build command to create a new version for release.
+
+	### Prerequisities
+
+	```
+	NodeJS + NPM
+	```
+
+	### Installing
+
+	```
+	npm install
+	```
+
+	```
+	npm run build
+	```
+
+	## Built With
+
+	* ReactJS
+	* Webpack
+	* SASS
+	* ES2015
+	* GULP
