@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import VideoList from '../components/video_list';
 import SearchBar from '../components/search_bar';
+import VideoDetail from '../components/video_detail';
 
 // es6 syntax: the use of Class inheritance 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
 		return (
 			<div className="app">
 				<SearchBar />
+				<VideoDetail />
 				<VideoList />
 			</div>
 		);
