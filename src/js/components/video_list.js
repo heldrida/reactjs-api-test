@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import VideoListItem from './video_list_item';
+import { selectVideo } from '../actions/index';
 
 // es6 syntax: fat arrows
 const VideoList = (props) => {
@@ -9,8 +10,8 @@ const VideoList = (props) => {
 		return null;
 	}
 
-	const onVideoSelect = () => {
-		console.log("onVideoSelect callback!");
+	const onVideoSelect = (video) => {
+		props.selectVideo(video);
 	};
 
 	const videoItems = props.videos[0].map((video) => {
@@ -31,4 +32,10 @@ function mapStateToProps(state, ownProps) {
 	}
 }
 
-export default connect(mapStateToProps)(VideoList);
+function matchDispatchToProps(dispatch) {
+	return bindActionCreators({
+		selectVideo: selectVideo
+	}, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(VideoList);

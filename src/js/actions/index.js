@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 const API_KEY = apiKeys.youtube_api;
 
 export const SEARCH_VIDEOS = 'SEARCH_VIDEOS';
+export const SELECT_VIDEO = 'SELECT_VIDEO';
 
 export function searchVideos(term) {
 
@@ -23,4 +24,12 @@ export function searchVideos(term) {
 		type: SEARCH_VIDEOS,
 		payload: promise
 	}
+}
+
+export function selectVideo(video) {
+	return {
+		type: SELECT_VIDEO,
+		payload: video
+	}
+
 }
