@@ -12,6 +12,9 @@ class App extends Component {
 	render() {
 		return (
 			<div className="app">
+				<div className={ 'title-container' }>
+					<h1>ReactJS + Redux + Youtube API</h1>
+				</div>
 				<SearchBar />
 				<VideoDetail />
 				<VideoList />

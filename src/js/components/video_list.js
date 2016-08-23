@@ -12,6 +12,7 @@ const VideoList = (props) => {
 
 	const onVideoSelect = (video) => {
 		props.selectVideo(video);
+		window.scroll(0, 0);
 	};
 
 	const videoItems = props.videos[0].map((video) => {

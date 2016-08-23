@@ -6,10 +6,7 @@ import Video from './video';
 const VideoDetail = ({ video }) => {
 
 	if (!video[0]) {
-		return (
-			<Video url={ 'https://www.youtube.com/embed/zUEUwBoWUrU' } 
-				title={ 'Street League Pro Open Finals ' } description={ '' } />
-		);
+		return null;
 	}
 
 	const videoId = video[0].id.videoId;
