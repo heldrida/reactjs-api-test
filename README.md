@@ -33,7 +33,6 @@ npm run build
 
 ### Development
 
-
 ```
 gulp dev
 ```	
