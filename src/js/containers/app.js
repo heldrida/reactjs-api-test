@@ -5,6 +5,8 @@ import VideoList from '../components/video_list';
 import SearchBar from '../components/search_bar';
 import VideoDetail from '../components/video_detail';
 
+require('../../sass/app.scss');
+
 // es6 syntax: the use of Class inheritance 
 class App extends Component {
 	render() {
