@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import VideoListItem from './video_list_item';
 
+// es6 syntax: fat arrows
 const VideoList = (props) => {
 	if (props.videos.length === 0) {
 		return null;

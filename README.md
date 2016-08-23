@@ -49,3 +49,9 @@
 	* SASS
 	* ES2015
 	* GULP
+
+	### Exercise notes:
+
+	- Search for `es6 syntax:` to see where ES6 features are used.
+
+	
