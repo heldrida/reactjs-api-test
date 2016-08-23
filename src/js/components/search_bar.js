@@ -24,8 +24,6 @@ class SearchBar extends Component {
 
 	render() {
 
-		console.log(this.props.videos);
-
 		// todo: debounce the callback (split the state and call for the action)
 
 		return (
