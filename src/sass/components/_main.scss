@@ -84,9 +84,10 @@
 	li {
 		margin-bottom: 30px;
 		cursor: pointer;
-		@include transition(opacity 0.3s);
+		@include transition(opacity 0.3s, transform 0.3s);
 		&:hover {
 			opacity: 0.5;
+			@include transform(translateX(20px));
 		}
 	}
 	.media {
@@ -99,6 +100,19 @@
 	.media-body {
 		width: calc(100% - 160px);
 		height: auto;
+		font-size: 0.7em;
+		letter-spacing: 0.01em;
+		color: #333;
+		h4 {
+			font-family: 'Baloo Bhaina', cursive;
+			letter-spacing: 1px;
+			margin-bottom: 5px;
+			line-height: normal;
+			color: #222;
+		}
+		p {
+			line-height: normal;
+		}
 	}
 	.media, .media-body {
 		display: inline-block;
