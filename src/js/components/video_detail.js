@@ -1,31 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Video from './video';
 
 const VideoDetail = ({ video }) => {
 
-	if (!video) {
+	if (!video[0]) {
 		return (
-			<div>Loading... </div>
+			<Video url={ 'https://www.youtube.com/embed/zUEUwBoWUrU' } 
+				title={ 'Street League Pro Open Finals ' } description={ '' } />
 		);
 	}
 
-	const videoId = 'PTXrxW7-Ons';
+	const videoId = video[0].id.videoId;
 	// es6 syntax: template literals
 	const url = `https://www.youtube.com/embed/${videoId}`;
-	const title = 'foo bar title';
-	const description = 'foo bar description';
+	const title = video[0].snippet.title;
+	const description = video[0].snippet.description;
 
 	return (
-		<div className="video-detail col-md-8">
-			<div className="embed-responsive embed-responsive-16by9">
-				<iframe className="embed-responsive-item" src={ url }></iframe>
-			</div>
-			<div className="details">
-				<div>{ title }</div>
-				<div>{ description }</div>
-			</div>
-		</div>
+		<Video url={ url } title={ title } description={ description } /> 
 	);
 
 }
