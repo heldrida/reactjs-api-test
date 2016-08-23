@@ -15,7 +15,8 @@ Clone the repository to your local environment, install any dependencies and ins
 
 ### Prerequisities
 
-Before you start, generate API key from Google youtube and copy the api_keys.example.js as api_keys.js and place your generated key there ( use the following link for more info: https://developers.google.com/youtube/registering_an_application * this is the valid url at the time this document was written, search otherwise )
+Before you start, generate the API key from Google youtube and copy the api_keys.example.js as api_keys.js and place your generated key there ( use the following link for more info: https://developers.google.com/youtube/registering_an_application * this is the valid url at the time this document was written, search otherwise ); If you can't be bothered just load the `/dist/index.html` and check the repository to see the source code.
+
 
 ```
 NodeJS + NPM
