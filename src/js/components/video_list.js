@@ -9,8 +9,12 @@ const VideoList = (props) => {
 		return null;
 	}
 
+	const onVideoSelect = () => {
+		console.log("onVideoSelect callback!");
+	};
+
 	const videoItems = props.videos[0].map((video) => {
-		return <VideoListItem key={ video.etag } video={ video } />
+		return <VideoListItem key={ video.etag } video={ video } onVideoSelect={ onVideoSelect } />
 	});
 
 	return (
