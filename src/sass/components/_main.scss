@@ -86,7 +86,7 @@
 		cursor: pointer;
 		@include transition(opacity 0.3s, transform 0.3s);
 		&:hover {
-			opacity: 0.5;
+			opacity: 0.86;
 			@include transform(translateX(20px));
 		}
 	}
@@ -111,7 +111,7 @@
 			color: #222;
 		}
 		p {
-			line-height: normal;
+			line-height: 20px;
 		}
 	}
 	.media, .media-body {
